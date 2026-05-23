@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ワイワイWi-Fi</title>
+  <title>Wifiないと生きていけない</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="titleScreen" class="screen active">
-  <h1>📶 ワイワイWi-Fi 📶</h1>
-  <div class="rule">壁を壊して<br>神回線を目指せ！</div>
-  <button id="startButton">タップしてスタート</button>
+  <img src="title.png" class="titleImage">
+
+  <div class="rule">
+    壁を壊して<br>
+    神回線を目指せ！
+  </div>
+
+  <button id="startButton">
+    タップしてスタート
+  </button>
 </div>
 
 <div id="gameScreen" class="screen">
-  <button id="backButton">タイトルへ戻る</button>
+
+  <button id="backButton">
+    タイトルへ戻る
+  </button>
 
   <div class="topInfo">
     <div id="stageText">STAGE 1</div>
@@ -25,31 +37,61 @@
     <div id="timeText">40</div>
   </div>
 
-  <div id="qualityText">通信品質：圏外寸前</div>
-  <div id="scoreText">通信ポイント：0pt</div>
+  <div id="qualityText">
+    通信品質：圏外寸前
+  </div>
+
+  <div id="scoreText">
+    通信ポイント：0pt
+  </div>
 
   <div class="canvasWrap">
     <canvas id="gameCanvas" width="360" height="540"></canvas>
+
     <div id="countdownText" class="countdownText"></div>
   </div>
+
 </div>
 
 <div id="resultScreen" class="screen">
+
   <h2>通信結果</h2>
-  <div id="resultEmoji" class="resultEmoji">📶</div>
+
+  <div id="resultEmoji" class="resultEmoji">
+    📶
+  </div>
+
   <div id="resultScore" class="resultScore"></div>
+
   <div id="resultQuality" class="resultQuality"></div>
+
   <div id="resultStage" class="resultStage"></div>
+
   <div id="resultTitle" class="resultTitle"></div>
 
   <div class="buttonArea">
-    <button id="shareButton">Xでシェア</button>
-    <button id="recordButton">記録を登録</button>
-    <button id="retryButton">もう1回遊ぶ</button>
-    <button id="homeButton">カバゲーセンへ</button>
+
+    <button id="shareButton">
+      Xでシェア
+    </button>
+
+    <button id="recordButton">
+      記録を登録
+    </button>
+
+    <button id="retryButton">
+      もう1回遊ぶ
+    </button>
+
+    <button id="homeButton">
+      カバゲーセンへ
+    </button>
+
   </div>
+
 </div>
 
 <script src="game.js"></script>
+
 </body>
 </html>

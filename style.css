@@ -1,149 +1,152 @@
-body {
-  margin: 0;
-  background: #121826;
-  color: white;
-  font-family: 'DotGothic16', sans-serif;
-  overflow: hidden;
+body{
+  margin:0;
+  background:#121826;
+  color:white;
+  font-family:'DotGothic16',sans-serif;
+  overflow:hidden;
 }
 
-.screen {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
+.screen{
+  display:none;
+  width:100vw;
+  height:100vh;
+  box-sizing:border-box;
 }
 
-.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.active{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
-#titleScreen {
-  justify-content: center;
-  gap: 28px;
-  text-align: center;
+#titleScreen{
+  justify-content:center;
+  gap:24px;
+  text-align:center;
 }
 
-h1 {
-  font-size: 34px;
-  line-height: 1.5;
+.titleImage{
+  width:min(92vw,520px);
+  image-rendering:pixelated;
 }
 
-.rule {
-  font-size: 18px;
-  line-height: 1.8;
+.rule{
+  font-size:18px;
+  line-height:1.8;
 }
 
-#gameScreen {
-  position: relative;
-  padding-top: 12px;
+button{
+  font-family:'DotGothic16',sans-serif;
+  border:none;
+  border-radius:12px;
+  background:#3bd8ff;
+  color:black;
+  font-size:15px;
+  padding:14px 18px;
 }
 
-#backButton {
-  position: fixed;
-  top: 8px;
-  right: 8px;
-  z-index: 20;
-  width: auto;
-  padding: 8px 10px;
-  font-size: 12px;
+#gameScreen{
+  position:relative;
+  padding-top:12px;
 }
 
-.topInfo {
-  width: 250px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2px;
-  text-align: center;
-  margin-bottom: 6px;
-  font-size: 15px;
+#backButton{
+  position:fixed;
+  top:8px;
+  right:8px;
+  z-index:20;
+  font-size:12px;
+  padding:8px 10px;
 }
 
-#placeText {
-  font-size: 20px;
+.topInfo{
+  width:260px;
+  text-align:center;
+  display:grid;
+  gap:4px;
+  margin-bottom:6px;
 }
 
-#timeText {
-  font-size: 18px;
+#stageText{
+  font-size:20px;
+}
+
+#placeText{
+  font-size:22px;
+}
+
+#timeText{
+  font-size:18px;
 }
 
 #qualityText,
-#scoreText {
-  margin-bottom: 6px;
-  font-size: 17px;
+#scoreText{
+  font-size:17px;
+  margin-bottom:6px;
 }
 
-.canvasWrap {
-  position: relative;
-  width: 360px;
-  height: 540px;
+.canvasWrap{
+  position:relative;
+  width:360px;
+  height:540px;
 }
 
-canvas {
-  background: #1b263b;
-  border: 4px solid white;
-  border-radius: 12px;
-  box-sizing: border-box;
+canvas{
+  border:4px solid white;
+  border-radius:12px;
+  background:#1a2233;
+  box-sizing:border-box;
+  image-rendering:pixelated;
 }
 
-.countdownText {
-  position: absolute;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 96px;
-  color: #ffffff;
-  text-shadow: 4px 4px 0 #00d0ff;
-  pointer-events: none;
+.countdownText{
+  position:absolute;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  font-size:92px;
+  color:white;
+  text-shadow:4px 4px 0 #00d0ff;
+  pointer-events:none;
 }
 
-.countdownText.show {
-  display: flex;
+.countdownText.show{
+  display:flex;
 }
 
-#resultScreen {
-  justify-content: center;
-  text-align: center;
+#resultScreen{
+  justify-content:center;
+  text-align:center;
 }
 
-.resultEmoji {
-  font-size: 80px;
+.resultEmoji{
+  font-size:80px;
 }
 
-.resultScore {
-  margin-top: 10px;
-  font-size: 30px;
+.resultScore{
+  margin-top:12px;
+  font-size:30px;
 }
 
-.resultQuality {
-  margin-top: 12px;
-  font-size: 24px;
+.resultQuality{
+  margin-top:12px;
+  font-size:24px;
 }
 
-.resultStage {
-  margin-top: 12px;
-  font-size: 18px;
+.resultStage{
+  margin-top:12px;
+  font-size:18px;
 }
 
-.resultTitle {
-  margin-top: 18px;
-  font-size: 18px;
+.resultTitle{
+  margin-top:18px;
+  font-size:18px;
 }
 
-.buttonArea {
-  margin-top: 28px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+.buttonArea{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
-
-button {
-  font-family: 'DotGothic16', sans-serif;
-  border: none;
-  border-radius: 12px;
-  background: #00d0ff;
-  color: black;
-  font-size: 15px;
-  padding: 14px
