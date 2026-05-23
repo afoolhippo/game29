@@ -1,152 +1,173 @@
-body{
-  margin:0;
-  background:#121826;
-  color:white;
-  font-family:'DotGothic16',sans-serif;
-  overflow:hidden;
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #9ff6ff 0%, #47d7ee 55%, #1da9cc 100%);
+  color: #102030;
+  font-family: 'DotGothic16', sans-serif;
+  overflow: hidden;
 }
 
-.screen{
-  display:none;
-  width:100vw;
-  height:100vh;
-  box-sizing:border-box;
+.screen {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.active{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#titleScreen{
-  justify-content:center;
-  gap:24px;
-  text-align:center;
+#titleScreen {
+  justify-content: flex-start;
+  gap: 18px;
+  text-align: center;
+  padding-top: 14px;
 }
 
-.titleImage{
-  width:min(92vw,520px);
-  image-rendering:pixelated;
+.titleImage {
+  width: min(96vw, 560px);
+  max-height: 58vh;
+  object-fit: contain;
+  image-rendering: pixelated;
+  cursor: pointer;
 }
 
-.rule{
-  font-size:18px;
-  line-height:1.8;
+.rule {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #082530;
+  text-shadow: 1px 1px 0 #ffffff;
 }
 
-button{
-  font-family:'DotGothic16',sans-serif;
-  border:none;
-  border-radius:12px;
-  background:#3bd8ff;
-  color:black;
-  font-size:15px;
-  padding:14px 18px;
+button {
+  font-family: 'DotGothic16', sans-serif;
+  border: 3px solid #102030;
+  border-radius: 12px;
+  background: #fff8b8;
+  color: #102030;
+  font-size: 15px;
+  padding: 12px 18px;
+  box-shadow: 3px 3px 0 #102030;
 }
 
-#gameScreen{
-  position:relative;
-  padding-top:12px;
+#gameScreen {
+  position: relative;
+  padding-top: 10px;
 }
 
-#backButton{
-  position:fixed;
-  top:8px;
-  right:8px;
-  z-index:20;
-  font-size:12px;
-  padding:8px 10px;
+#backButton {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  z-index: 20;
+  font-size: 12px;
+  padding: 7px 10px;
 }
 
-.topInfo{
-  width:260px;
-  text-align:center;
-  display:grid;
-  gap:4px;
-  margin-bottom:6px;
+.topInfo {
+  width: 260px;
+  text-align: center;
+  display: grid;
+  gap: 2px;
+  margin-bottom: 5px;
+  color: #082530;
+  text-shadow: 1px 1px 0 #ffffff;
 }
 
-#stageText{
-  font-size:20px;
+#stageText {
+  font-size: 20px;
 }
 
-#placeText{
-  font-size:22px;
+#placeText {
+  font-size: 21px;
 }
 
-#timeText{
-  font-size:18px;
+#timeText {
+  font-size: 18px;
 }
 
 #qualityText,
-#scoreText{
-  font-size:17px;
-  margin-bottom:6px;
+#scoreText {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #082530;
+  text-shadow: 1px 1px 0 #ffffff;
 }
 
-.canvasWrap{
-  position:relative;
-  width:360px;
-  height:540px;
+.canvasWrap {
+  position: relative;
+  width: 360px;
+  height: 540px;
 }
 
-canvas{
-  border:4px solid white;
-  border-radius:12px;
-  background:#1a2233;
-  box-sizing:border-box;
-  image-rendering:pixelated;
+canvas {
+  display: block;
+  width: 360px;
+  height: 540px;
+  border: 4px solid #102030;
+  border-radius: 12px;
+  background: #bffaff;
+  box-sizing: border-box;
+  image-rendering: pixelated;
 }
 
-.countdownText{
-  position:absolute;
-  inset:0;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  font-size:92px;
-  color:white;
-  text-shadow:4px 4px 0 #00d0ff;
-  pointer-events:none;
+.countdownText {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 92px;
+  color: #ffffff;
+  text-shadow: 4px 4px 0 #008fc0, -2px -2px 0 #102030;
+  pointer-events: none;
 }
 
-.countdownText.show{
-  display:flex;
+.countdownText.show {
+  display: flex;
 }
 
-#resultScreen{
-  justify-content:center;
-  text-align:center;
+#resultScreen {
+  justify-content: center;
+  text-align: center;
+  color: #082530;
+  text-shadow: 1px 1px 0 #ffffff;
 }
 
-.resultEmoji{
-  font-size:80px;
+#resultScreen h2 {
+  font-size: 30px;
+  margin: 0 0 12px;
 }
 
-.resultScore{
-  margin-top:12px;
-  font-size:30px;
+.resultEmoji {
+  font-size: 72px;
 }
 
-.resultQuality{
-  margin-top:12px;
-  font-size:24px;
+.resultScore {
+  margin-top: 10px;
+  font-size: 28px;
 }
 
-.resultStage{
-  margin-top:12px;
-  font-size:18px;
+.resultQuality {
+  margin-top: 10px;
+  font-size: 23px;
 }
 
-.resultTitle{
-  margin-top:18px;
-  font-size:18px;
+.resultStage {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
-.buttonArea{
-  margin-top:28px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
+.resultTitle {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.buttonArea {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
