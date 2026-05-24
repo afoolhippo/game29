@@ -215,9 +215,9 @@ canvas{
 }
 
 .resultImage{
-  width:min(86vw,340px);
+  width:min(72vw,250px);
 
-  margin-top:12px;
+  margin-top:10px;
 
   border-radius:14px;
 
